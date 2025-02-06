@@ -509,7 +509,7 @@ section,
   top:-30px;
 }
 
-/*--------------------------------------------------------------
+/*--------------------------------------------------------------s
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
@@ -551,6 +551,8 @@ section,
   align-items: center;
   justify-content: center;
   background-color: white;
+  flex-direction: column; 
+  overflow: visible;
 }
 .hero > * {
   width: auto;
@@ -608,9 +610,10 @@ section,
 }
 
 .hero .social-links a {
+  pointer-events: auto; /* Enable pointer events */
   font-size: 24px;
   display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: #45505B;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;

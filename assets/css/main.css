@@ -20,7 +20,7 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
+  --default-color: color: #45505B; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -121,7 +121,7 @@ h6 {
   content: "";
   display: inline-block;
   border-radius: 50%;
-  width: 24px;
+  width: 24px;  
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid var(--accent-color);
@@ -504,25 +504,31 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 0 0;
+  padding: 10 0;
   overflow: clip;
   top:-30px;
+  margin-bottom: 80px;
 }
 
 /*--------------------------------------------------------------s
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 70px;
   position: relative;
+  align-items: center;   /* Center the section title horizontally */
+  justify-content: center; /* Center vertically if needed */
+  text-align: center;     /* Ensure text is centered */
+  width: 100%;           
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #45505B;
 }
 
 .section-title h2:after {
@@ -530,14 +536,18 @@ section,
   position: absolute;
   display: block;
   width: 50px;
-  height: 3px;
+  height: 3px;  
   background: var(--accent-color);
-  left: 0;
-  bottom: 0;
+  left: 50%;
+  bottom: 10px; 
+  transform: translateX(-50%); /* Center the line */
 }
 
 .section-title p {
   margin-bottom: 0;
+  color: #45505B;
+  font-size: 19.5px;
+  align-items: right;
 }
 
 /*--------------------------------------------------------------
@@ -638,22 +648,31 @@ section,
 --------------------------------------------------------------*/
 .about .content h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28.8px;
+  color: #45505B;
+}
+.about .content p {
+  /* font-weight: 700; */
+  font-size: 19.5px;
+  color: #45505B;
 }
 
 .about .content ul {
   list-style: none;
   padding: 0;
+  color: #45505B;
 }
 
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  color: #45505B;
 }
 
 .about .content ul strong {
   margin-right: 10px;
+  color: #45505B;
 }
 
 .about .content ul i {
@@ -661,6 +680,7 @@ section,
   margin-right: 5px;
   color: var(--accent-color);
   line-height: 0;
+ 
 }
 
 /*--------------------------------------------------------------
@@ -1189,7 +1209,7 @@ section,
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  /* border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%); */
 }
 
 .portfolio-details .portfolio-info ul {

@@ -507,7 +507,7 @@ section,
   padding: 10 0;
   overflow: clip;
   top:-30px;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 /*--------------------------------------------------------------s
@@ -719,38 +719,32 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  color: var(--heading-color);
+.skills .content ul {
+  list-style: none;
   padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: var(--heading-font);
+  color: #45505B;
+  margin-left: 20px;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skills .content ul li {
+  font-size: 17px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  color: #45505B;
 }
 
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
+.skills .content ul strong {
+  margin-right: 10px;
+  color: #45505B;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
+.skills .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--accent-color);
+  line-height: 0;
+ 
 }
 
 /*--------------------------------------------------------------

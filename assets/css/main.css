@@ -923,6 +923,10 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
+  display: flex;
+  flex-direction: column;  /* Stack the icon and title vertically */
+  align-items: center;     /* Horizontally center the content */
+  justify-content: center; /* Vertically center the content */
   position: relative;
 }
 
@@ -937,6 +941,7 @@ section,
   transition: 0.5s;
   border: 1px solid var(--accent-color);
   margin-right: 20px;
+  margin-bottom: 10px; 
 }
 
 .services .service-item .icon i {
@@ -955,21 +960,10 @@ section,
 
 .services .service-item .title {
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 18px;
-}
-
-.services .service-item .title a {
-  color: var(--heading-color);
-}
-
-.services .service-item .title a:hover {
-  color: var(--accent-color);
-}
-
-.services .service-item .description {
-  line-height: 24px;
-  font-size: 14px;
+  color: #45505B;
+  text-align: center; /* Ensures text is centered */
 }
 
 /*--------------------------------------------------------------

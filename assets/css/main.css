@@ -1164,6 +1164,55 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
+
+.contact-item {
+  display: flex;
+  flex-direction: column;  /* Stack the icon and text vertically */
+  align-items: center;     
+  justify-content: center;
+  position: relative;
+  transition: 0.3s;
+}
+
+.contact-item .icon {
+  background: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid var(--accent-color);
+  margin-bottom: 10px; 
+}
+
+.contact-item .icon i {
+  color: var(--contrast-color);
+  font-size: 24px;
+}
+
+.contact-item:hover .icon {
+  background: var(--surface-color);
+}
+
+.contact-item:hover .icon i {
+  color: var(--accent-color);
+}
+
+.contact-item .title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #45505B;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.contact-item:hover .title {
+  color: var(--accent-color);
+}
+
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/

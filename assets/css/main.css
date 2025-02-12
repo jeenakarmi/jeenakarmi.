@@ -912,6 +912,7 @@ section,
 }
 
 .testimonials .testimonial-item {
+  color: #373a3d;
   box-sizing: content-box;
   text-align: center;
   min-height: 320px;
@@ -923,6 +924,7 @@ section,
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
+  color: #45505B;
 }
 
 

@@ -674,6 +674,42 @@ section,
   line-height: 0;
  
 }
+@media (max-width: 575px) {
+  .skills .section-title {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .skills .section-title p {
+    font-size: 14px; /* Reduce paragraph text size */
+    line-height: 1.4; /* Adjust line height for readability */
+    margin-bottom: 20px; /* Reduce bottom margin */
+  }
+
+  .skills .content .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills .content ul {
+    margin-left: 10px;
+  }
+
+  .skills .content ul li {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .skills .content ul strong {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+
+  .skills .content ul i {
+    font-size: 12px;
+    margin-right: 4px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Resume Section

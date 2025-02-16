@@ -561,6 +561,39 @@ section,
   color: var(--accent-color);
 }
 
+@media (max-width: 575px) {
+  .hero {
+    padding: 50px 20px; /* Add padding to prevent text from touching edges */
+    min-height: 80vh; /* Reduce height for smaller screens */
+  }
+
+  .hero h3 {
+    font-size: 40px; /* Reduce font size for name */
+    font-weight: 700;
+    margin-top: 150px; /* Add margin to push "Jeena Nakarmi" down */
+  }
+
+  .hero p {
+    font-size: 18px; /* Make paragraph text smaller */
+    margin-top: 10px;
+  }
+
+  .hero p span {
+    letter-spacing: 1px; /* Adjust letter spacing */
+    border-bottom-width: 1px; /* Make the underline thinner */
+    font-size: 18px; 
+  }
+
+  .hero .social-links {
+    margin-top: 20px;
+  }
+
+  .hero .social-links a {
+    font-size: 20px; /* Reduce social media icon size */
+    margin-right: 15px; /* Reduce spacing */
+  }
+}
+
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;

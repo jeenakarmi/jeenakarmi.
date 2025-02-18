@@ -760,6 +760,7 @@ section,
  
 }
 @media (max-width: 575px) {
+  
   .skills .section-title {
     text-align: center;
     padding: 0 10px;
@@ -873,6 +874,69 @@ section,
   background: var(--background-color);
   border: 2px solid var(--accent-color);
 }
+
+@media (max-width: 575px) {
+  
+  .resume .resume-title {
+    font-size: 20px; /* Reduce heading size */
+    text-align: center; /* Center-align title */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+  }
+
+  .resume .section-title h2 {
+    font-size: 34px !important;
+  }
+
+  .resume .section-title p {
+    font-size: 16px !important;
+    text-align: center;
+    margin-bottom: -50px;
+  }
+
+  .resume .resume-item {
+    padding: 0 10px 15px 15px; /* Reduce padding for better spacing */
+    border-left-width: 1.5px; /* Adjust border width */
+    
+  }
+
+  .resume .resume-item h4 {
+    font-size: 16px; /* Adjust heading size */
+    line-height: 20px; /* Improve readability */
+    margin-bottom: 10px;
+  }
+
+  .resume .resume-item h5 {
+    font-size: 14px; /* Reduce subheading size */
+    padding: 2px 6px;
+    margin-bottom: 8px;
+  }
+
+  .resume .resume-item p {
+    font-size: 16px !important; /* Reduce paragraph size */
+    line-height: 1.5; /* Improve readability */
+    text-align: justify; /* Justify text for better alignment */
+    margin-bottom: 10px;
+  }
+
+
+  .resume .resume-item ul {
+    padding-left: 15px; /* Reduce left padding */
+  }
+
+  .resume .resume-item ul li {
+    font-size: 16px; /* Reduce text size */
+    padding-bottom: 8px;
+  }
+
+  .resume .resume-item::before {
+    width: 12px; /* Reduce circle size */
+    height: 12px;
+    left: -7px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Section

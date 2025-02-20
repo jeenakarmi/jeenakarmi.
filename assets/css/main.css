@@ -1259,6 +1259,27 @@ section,
   background-color: var(--accent-color);
 }
 
+@media (max-width: 575px) {
+  /* Section Title */
+  .testimonials .section-title {
+    padding: 0 10px; /* Avoid text touching the screen edges */
+    text-align: center;
+  }
+  .testimonials .section-title h2 {
+    font-size: 34px;      /* Smaller h2 size on mobile */
+    margin-bottom: 10px; 
+  }
+  .testimonials .section-title p {
+    font-size: 16px;      /* Smaller paragraph size */
+    text-align:justify; 
+    padding: 0 10px;      /* Horizontal padding */
+    margin-bottom: 20px;  /* Space below the paragraph */
+  }
+
+
+}
+
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/

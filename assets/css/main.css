@@ -1275,8 +1275,6 @@ section,
     padding: 0 10px;      /* Horizontal padding */
     margin-bottom: 20px;  /* Space below the paragraph */
   }
-
-
 }
 
 
@@ -1427,6 +1425,39 @@ section,
 
 .contact-item:hover .title {
   color: var(--accent-color);
+}
+
+@media (max-width: 575px) {
+  /* Section Title for Contact */
+  .contact .section-title {
+    padding: 0 10px; /* Prevent text from touching screen edges */
+    text-align: center;
+  }
+  .contact .section-title h2 {
+    font-size: 34px;      /* Smaller heading size */
+    text-align: center;
+    margin-bottom: 10px;  /* Reduced space below heading */
+  }
+  .contact .section-title p {
+    font-size: 16px;      /* Smaller paragraph text */
+    line-height: 1.4;
+    text-align: justify;
+    padding: 0 10px;      /* Horizontal padding for readability */
+    margin-bottom: 15px;  /* Adjust bottom margin */
+  }
+
+  /* Contact Items (e.g., LinkedIn, Email, etc.) */
+  .contact .contact-item {
+    flex-direction: column;   /* Stack icon and text vertically */
+    align-items: center;      /* Center-align items */
+    text-align: center;
+    padding: 0 10px;          /* Add horizontal padding */
+    margin-bottom: 15px;      /* Optional: add spacing between items */
+  }
+  .contact .contact-item .icon {
+    margin-bottom: 5px;       /* Space between the icon and title/text */
+  }
+  
 }
 
 

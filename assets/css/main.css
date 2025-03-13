@@ -936,6 +936,13 @@ section,
     left: -7px;
   }
 }
+@media (max-width: 768px) {
+  .resume-item li.rising-school { 
+    padding-left: 20px; /* Adjust spacing */
+    text-indent: -20px; /* Keeps bullet aligned */
+    display: list-item; /* Ensures bullet stays */
+  }
+}
 
 
 /*--------------------------------------------------------------
